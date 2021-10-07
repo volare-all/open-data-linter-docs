@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Data Linter ドキュメント</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> Open Data Linter
+          </a>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-csvlinter">CSV Linter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-excellinter">Excel Linter</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Open Data Linter</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>Open Data Linter  ドキュメント</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-open-data-linter-s-documentation">
+<h1>Welcome to Open Data Linter's documentation!<a class="headerlink" href="#welcome-to-open-data-linter-s-documentation" title="このヘッドラインへのパーマリンク"></a></h1>
+<div class="toctree-wrapper compound">
+<span id="document-csvlinter"></span><section id="csv-linter">
+<h2>CSV Linter<a class="headerlink" href="#csv-linter" title="このヘッドラインへのパーマリンク"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="opendatalinter.CSVLinter">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">opendatalinter.</span></span><span class="sig-name descname"><span class="pre">CSVLinter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_line_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_line_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.CSVLinter" title="この定義へのパーマリンク"></a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="opendatalinter.CSVLinter.check_1_1">
+<span class="sig-name descname"><span class="pre">check_1_1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.CSVLinter.check_1_1" title="この定義へのパーマリンク"></a></dt>
+<dd><p>ファイル形式は Excel か CSV となっているか</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendatalinter.CSVLinter.check_1_10">
+<span class="sig-name descname"><span class="pre">check_1_10</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.CSVLinter.check_1_10" title="この定義へのパーマリンク"></a></dt>
+<dd><p>機種依存⽂字を使⽤していないか。
+入力ファイルのエンコードがCP932かつshift_jisにデコードできない要素をinvalidとみなす。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendatalinter.CSVLinter.check_1_11">
+<span class="sig-name descname"><span class="pre">check_1_11</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.CSVLinter.check_1_11" title="この定義へのパーマリンク"></a></dt>
+<dd><p>e-Stat の時間軸コードの表記、⻄暦表記⼜は和暦に⻄暦の併記がされているか</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendatalinter.CSVLinter.check_1_12">
+<span class="sig-name descname"><span class="pre">check_1_12</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.CSVLinter.check_1_12" title="この定義へのパーマリンク"></a></dt>
+<dd><p>正確な地域名称が表記されている．もしくは，隣接するセルに都道府県コードが併記されているか</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendatalinter.CSVLinter.check_1_13">
+<span class="sig-name descname"><span class="pre">check_1_13</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.CSVLinter.check_1_13" title="この定義へのパーマリンク"></a></dt>
+<dd><p>数値データの同⼀列内に特殊記号（秘匿等）が含まれる場合</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendatalinter.CSVLinter.check_1_2">
+<span class="sig-name descname"><span class="pre">check_1_2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.CSVLinter.check_1_2" title="この定義へのパーマリンク"></a></dt>
+<dd><p>１セル１データとなっているか</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendatalinter.CSVLinter.check_1_3">
+<span class="sig-name descname"><span class="pre">check_1_3</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.CSVLinter.check_1_3" title="この定義へのパーマリンク"></a></dt>
+<dd><p>数値データは数値属性とし、⽂字列を含まないこと.
+単位が列に一律に含まれている場合，列ごとに警告する</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendatalinter.CSVLinter.check_1_4">
+<span class="sig-name descname"><span class="pre">check_1_4</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.CSVLinter.check_1_4" title="この定義へのパーマリンク"></a></dt>
+<dd><p>セルの結合をしていないか</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendatalinter.CSVLinter.check_1_5">
+<span class="sig-name descname"><span class="pre">check_1_5</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.CSVLinter.check_1_5" title="この定義へのパーマリンク"></a></dt>
+<dd><p>スペースや改⾏等で体裁を整えていないか。
+スペースと改行を1つ以上含む要素をinvalidとみなす。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendatalinter.CSVLinter.check_1_6">
+<span class="sig-name descname"><span class="pre">check_1_6</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.CSVLinter.check_1_6" title="この定義へのパーマリンク"></a></dt>
+<dd><p>項⽬名等を省略していないか(ヘッダに欠損データがないか)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendatalinter.CSVLinter.check_1_7">
+<span class="sig-name descname"><span class="pre">check_1_7</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.CSVLinter.check_1_7" title="この定義へのパーマリンク"></a></dt>
+<dd><p>数式を使⽤している場合は、数値データに修正しているか。</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendatalinter.CSVLinter.check_2_1">
+<span class="sig-name descname"><span class="pre">check_2_1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.CSVLinter.check_2_1" title="この定義へのパーマリンク"></a></dt>
+<dd><p>データが分断されていないか</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<span id="document-excellinter"></span><section id="excel-linter">
+<h2>Excel Linter<a class="headerlink" href="#excel-linter" title="このヘッドラインへのパーマリンク"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="opendatalinter.ExcelLinter">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">opendatalinter.</span></span><span class="sig-name descname"><span class="pre">ExcelLinter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_line_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_line_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.ExcelLinter" title="この定義へのパーマリンク"></a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="opendatalinter.ExcelLinter.check_1_4">
+<span class="sig-name descname"><span class="pre">check_1_4</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.ExcelLinter.check_1_4" title="この定義へのパーマリンク"></a></dt>
+<dd><p>セルの結合をしていないか</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendatalinter.ExcelLinter.check_1_7">
+<span class="sig-name descname"><span class="pre">check_1_7</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opendatalinter.ExcelLinter.check_1_7" title="この定義へのパーマリンク"></a></dt>
+<dd><p>数式を使⽤している場合は、数値データに修正しているか。
+'='から始まるセルをinvalidとみなす。</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Volare Tokyo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
